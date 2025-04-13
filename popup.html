@@ -35,21 +35,29 @@
     }
     
     h1 {
-      font-size: 16px;
-      font-weight: 600;
-      margin: 0 0 12px 0;
-      padding-bottom: 12px;
-      color: var(--text-color);
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      align-items: center;
-    }
-    
-    h1::before {
-      content: "🔖";
-      margin-right: 8px;
-      font-size: 18px;
-    }
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  padding: 10px 16px; /* Adjusted padding */
+  color: white; /* Changed to white */
+  background-color: var(--primary-color); /* Blue background */
+  border-radius: var(--radius); /* Using your existing radius variable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  box-shadow: var(--shadow); /* Using your existing shadow variable */
+  border: none; /* Remove any default borders */
+}
+
+h1::before {
+  content: "🔖";
+  margin-right: 10px;
+  font-size: 18px;
+  filter: 
+    brightness(0) invert(1) /* Makes icon white */
+    drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
     
     .bookmark-list {
       max-height: 300px;
